@@ -63,3 +63,21 @@ main {
 	color: #333;
 	margin-top: 10px;
 }
+.precio-antes {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+.precio-ahora {
+    font-size: 24px;
+    color: rgb(18, 238, 87);
+    font-weight: bold;
+  }
+.encabezado {
+	background-color: #58bf8a;
+	color: #fff;
+	padding: 10px
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
