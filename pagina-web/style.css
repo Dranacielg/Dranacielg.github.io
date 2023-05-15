@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+/*Navegador Superior*/
 header {
 	background-color: #333;
 	color: #fff;
@@ -24,6 +24,12 @@ nav li {
 	margin-right: 20px;
 }
 
+nav .sesion{
+	margin: auto;
+	border-radius: 10px;
+	background-color: #4CAF50;
+}
+
 nav a {
 	color: #fff;
 	text-decoration: none;
@@ -34,7 +40,7 @@ main {
 	flex-wrap: wrap;
 	padding: 20px;
 }
-
+ /* productos*/
 .product {
 	flex-basis: calc(33.33% - 20px);
 	margin: 10px;
@@ -73,16 +79,17 @@ main {
     color: rgb(18, 238, 87);
     font-weight: bold;
   }
+
+/* Main*/
 .encabezado {
 	background-color: #58bf8a;
 	color: #fff;
-	padding: 10px
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 footer {
-	background-color: #333;
 	color: #fff;
 	padding: 10px;
 	display: flex;
@@ -95,3 +102,188 @@ footer {
 	li {
 		margin-right: 20px;
 	}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+
+main {
+  padding: 1rem;
+}
+/* navegador inferior*/
+footer {
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+  /*slider*/
+.slider{
+    padding-top: 4rem;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display:flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    30%{margin-left:0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+/* columnas finales*/
+.contenedor-columna{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.columna1{
+    width: 100%;
+    float: left;
+    padding-left: 25px;
+    text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+.columna2 img{
+    width: 100%;
+}
+/* navegador inferior*/
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+footer li {
+	margin-right: 20px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+/* contacto*/
+.container-contacto{
+    background-image: url("imagenes/fondo.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin:auto;
+    padding: 6rem 0;
+	display: grid;
+	place-items: center;
+
+}
+.container-contacto form{
+    margin:auto;
+    background:transparent;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}  
+.container-contacto form h2{
+    color: #f2f2f2;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.container-contacto form input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+}
+.container-contacto form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.container-contacto form{
+	width: 100%;}
+
+/*Registro e Inicio de Sesion*/
+form {
+	display: flex;
+	flex-direction: column;
+	background-color: #58bf8a;
+	padding: 20px;
+	margin-top: 50px;
+  }
+  
+  h1 {
+	text-align: center;
+	color: blue;
+  }
+
+  
+  label {
+	display: block;
+	margin-bottom: 10px;
+	width: 20%;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+	padding: 8px;
+	border: none;
+	box-shadow: none;
+	border-radius: 6px;
+	max-width: 100%;
+	min-width: 20px;
+  }
+  
+  input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+  }
+  
+  input[type="submit"]:hover {
+	opacity: 0.9;
+  }
+  h3 {
+	background-color: gray;
+	background-color: #58bf8a;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
