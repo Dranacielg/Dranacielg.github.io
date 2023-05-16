@@ -293,3 +293,48 @@ form {
 	justify-content: space-between;
 	align-items: center;
   }
+/*Carrito*/
+#carrito {
+	border: solid 1px #ccc; /* Borde de color claro */
+	padding: 20px; /* Espacio interior */
+	background-color: #fff;
+  }
+  
+  /* Estilo del título */
+  #carrito h2 {
+	margin-top: 5px;
+	font-size: 18px;
+	text-align: center;
+  }
+  
+  /* Estilo de los elementos de la lista */
+  #items li {
+	list-style-type: none; /* No mostrar puntos por defecto */
+	display: inline-block; /* Mostrar elementos uno junto a otro */
+	margin-right: 10px; /* Espacio entre elementos */
+  }
+  
+  /* Estilo de la etiqueta "Total costo" */
+  #total-cost {
+	font-weight: bold; /* Fuente más gruesa */
+	color: red; /* Color rojo para resaltarlo */
+	font-size: 24px; /* Tamaño de letra más grande */
+  }
+  
+  /* Botón de comprar */
+  .btn {
+	background-color: green; /* Color verde para el botón */
+	color: white; /* Negrita blanca */
+	border: none; /* Quitar borde */
+	cursor: pointer; /* Poner cursor cuando pasamos el mouse sobre él */
+	padding: 10px 30px; /* Configurar espacios internos */
+	width: 160px; /* Ancho máximo del botón */
+  }
+  
+  /* Ocultar inputs tipo file */
+  input[type=file] {
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+  }
+  
