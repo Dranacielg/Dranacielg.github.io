@@ -234,15 +234,6 @@ footer a {
   button[type="submit"]:hover {
 	background-color: #45a049;
   }
-  
-  /* Estilos para pantallas más pequeñas */
-  @media screen and (max-width: 480px) {
-	form {
-	  max-width: 300px;
-	}
-  }
-  
-
 /*Registro e Inicio de Sesion*/
 form {
 	display: flex;
@@ -265,7 +256,7 @@ form {
   }
   
   input[type="text"], input[type="email"], input[type="password"] {
-	padding: 8px;
+	padding: 10px;
 	border: none;
 	box-shadow: none;
 	border-radius: 6px;
@@ -293,6 +284,16 @@ form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  }
+  a {
+	text-decoration: none;
+  }
+  .warnings{
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: blueviolet;
+	padding-top: 20px;
   }
 /*Carrito*/
 #carrito {
