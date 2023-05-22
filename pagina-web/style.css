@@ -186,7 +186,7 @@ footer a {
 	color: #fff;
 	text-decoration: none;
 }
-/* Estilos generales */
+/* Contactos */
 .container-contacto {
 	display: flex;
 	justify-content: center;
@@ -269,7 +269,7 @@ form {
 	border: none;
 	box-shadow: none;
 	border-radius: 6px;
-	max-width: 100%;
+	max-width: 80%;
 	min-width: 20px;
   }
   
@@ -344,13 +344,6 @@ form {
 	display: flex;
 	align-items: center;
 	padding-top: 15px;
-}
-
-input[type="text"] {
-	padding: 8px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	width: 250px;
 }
 
 button[type="submit"] {

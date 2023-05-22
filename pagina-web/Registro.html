@@ -21,23 +21,24 @@
           </ul>
 
           <div class="barra-busqueda">
-              <input type="text" placeholder="Buscar productos...">
-              <button type="submit">Buscar</button>
-
-              <div class="carrito-icono">
-                  <i class="fa-solid fa-cart-shopping fa-xl"></i>
-              </div>
+            <input type="text" placeholder="Buscar productos...">
+            <button type="submit">Buscar</button>
+    
+            <div class="carrito-icono">
+              <a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            </div>
           </div>
       </nav>
     </header>
     <form>
         <h1 id="hh">Registro de Usuario</h1>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input class="nick" type="text" id="nombre" name="nombre" required>
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required>
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required>
+        <br>
         <input type="submit" value="Registrarse">
       </form>
       <h3>ya tienes cuenta?<a href="login.html">Ir a Iniciar sesion</a></h3>
