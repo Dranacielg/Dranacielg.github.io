@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-escale=1.0">
 	<title>Tienda Virtual</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/8c04bf8fa3.js" crossorigin="anonymous"></script>
+	
+
 </head>
 <body>
 
@@ -26,6 +30,7 @@
 				<div class="carrito-icono">
 					<a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
 				</div>
+			
 			</div>
 
 		</nav>
@@ -40,36 +45,56 @@
 
 	<h1 class="encabezado">Ofertas</h1>
 	<main>
-		<section class="product">
-			<img src="https://via.placeholder.com/150x150" alt="Producto 1">
-			<h2>Producto 1</h2>
-			<p>Descripción del producto 1.</p>
-			<p><span class="precio-antes">$100</span> <span class="precio-ahora">$80</span></p>
-			<button class="agregar_carrito" data-producto="1">Agregar al carrito</button>
-		</section>
+		<div class="productos-oferta">
+			<div class="product">
+				<figure>
+					<img src="https://via.placeholder.com/150x150" alt="Producto 1" />
+				</figure>
+				<div class="info-producto">
+					<h2>Producto 1</h2>
+					<p>Descripción del producto 1.</p>
+					<p><span class="precio-antes">$100</span> <span class="precio-ahora">$80</span></p>
+					<button class="agregar_carrito" data-producto="1">Agregar al carrito</button>
+				</div>
+			</div>
 
-		<section class="product">
-			<img src="https://via.placeholder.com/150x150" alt="Producto 2">
-			<h2>Producto 2</h2>
-			<p>Descripción del producto 2.</p>
-			<p><span class="precio-antes">$90</span> <span class="precio-ahora">$70</span></p>
-			<button class="agregar_carrito" data-producto="2">Agregar al carrito</button>
-		</section>
+			<div class="product">
+				<figure>
+					<img src="https://via.placeholder.com/150x150" alt="Producto 2" />
+				</figure>
+				<div class="info-producto">
+					<h2>Producto 2</h2>
+					<p>Descripción del producto 2.</p>
+					<p><span class="precio-antes">$90</span> <span class="precio-ahora">$70</span></p>
+					<button class="agregar_carrito" data-producto="1">Agregar al carrito</button>
+				</div>
+			</div>
 
-		<section class="product">
-			<img src="https://via.placeholder.com/150x150" alt="Producto 3">
-			<h2>Producto 3</h2>
-			<p>Descripción del producto 3.</p>
-			<p><span class="precio-antes">$120</span> <span class="precio-ahora">$95</span></p>
-			<button class="agregar_carrito" data-producto="3">Agregar al carrito</button>
-		</section>
-		<section class="product">
-			<img src="https://via.placeholder.com/150x150" alt="Producto 3">
-			<h2>Producto 4</h2>
-			<p>Descripción del producto 3.</p>
-			<p><span class="precio-antes">$150</span> <span class="precio-ahora">$95</span></p>
-			<button class="agregar_carrito" data-producto="4">Agregar al carrito</button>
-		</section>
+			<div class="product">
+				<figure>
+					<img src="https://via.placeholder.com/150x150" alt="Producto 3" />
+				</figure>
+				<div class="info-producto">
+					<h2>Producto 3</h2>
+					<p>Descripción del producto 3.</p>
+					<p><span class="precio-antes">$120</span> <span class="precio-ahora">$95</span></p>
+					<button class="agregar_carrito" data-producto="1">Agregar al carrito</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<figure>
+					<img src="https://via.placeholder.com/150x150" alt="Producto 4" />
+				</figure>
+				<div class="info-producto">
+					<h2>Producto 4</h2>
+					<p>Descripción del producto 4.</p>
+					<p><span class="precio-antes">$150</span> <span class="precio-ahora">$95</span></p>
+					<button class="agregar_carrito" data-producto="1">Agregar al carrito</button>
+				</div>
+			</div>
+		</div>
+		
 	</main>
 	<div class="contenedor-columna">
 		<div class="columna1">
@@ -91,6 +116,6 @@
 		</ul>
 		<p>Derechos Reservados © Tienda Virtual 2023</p>
 	</footer>
-
+	<script src="Script1.js"> </script>
 </body>
 </html>

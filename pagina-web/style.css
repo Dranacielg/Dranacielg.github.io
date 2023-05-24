@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, sans-serif;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	background-color: #333;
 }
@@ -49,6 +49,7 @@ main {
 	padding: 10px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	text-align: center;
+	
 }
 
 .product img {
@@ -88,7 +89,7 @@ main {
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 }
 footer {
 	color: #fff;
@@ -358,9 +359,12 @@ button[type="submit"] {
 }
 
 .carrito-icon {
-	margin-left: 20px;
+	margin-left: 30px;
 	color: #007bff;
 	font-size: 20px;
+	width: 50px;
+	height: 50px;
+
 
 }
 
