@@ -3,6 +3,9 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	background-color: #333;
+	position: relative;
+	padding-bottom: 2.5rem;
+	min-height: 100vh;
 }
 /*Navegador Superior*/
 header {
@@ -34,11 +37,6 @@ nav .sesion{
 nav a {
 	color: #fff;
 	text-decoration: none;
-}
-
-main {
-	flex-wrap: wrap;
-	padding: 20px;
 }
 
  /* productos*/
@@ -83,6 +81,13 @@ main {
   }
 
 /* Main*/
+
+main {
+	flex-wrap: wrap;
+	padding: 1rem;
+}
+
+
 .encabezado {
 	background-color: #58bf8a;
 	color: #fff;
@@ -90,32 +95,6 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-}
-footer {
-	color: #fff;
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	} 
-	ul {
-		list-style: none;
-	}
-	li {
-		margin-right: 20px;
-	}
-
-
-
-main {
-  padding: 1rem;
-}
-/* navegador inferior*/
-footer {
-  padding: 1rem;
-  background-color: black;
-  color: #fff;
-  text-align: center;
 }
 
   /*slider*/
@@ -151,7 +130,7 @@ footer {
     70%{margin-left: -200%;}
     100%{margin-left: -200%;}
 }
-/* columnas finales*/
+/* columnas sobre el footer*/
 .contenedor-columna{
     width: 100%;
     height: auto;
@@ -172,6 +151,28 @@ footer {
     width: 100%;
 }
 /* navegador inferior*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	} 
+	ul {
+		list-style: none;
+	}
+	li {
+		margin-right: 20px;
+	}
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 footer ul {
 	list-style: none;
 	margin: 0;
