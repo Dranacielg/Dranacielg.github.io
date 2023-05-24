@@ -342,7 +342,7 @@ form {
   }
   
   /* Barra de busqueda */
-./*barra-busqueda {
+/*barra-busqueda {
 	display: flex;
 	align-items: center;
 	padding-top: 15px;
@@ -469,6 +469,12 @@ button[type="submit"] {
 
 .esconder-carrito{
 	display: none;
+}
+
+.carrito-vacio{
+	padding: 15px;
+	text-align: center;
+	color: black;
 }
 /*.fa-solid fa-xmark:hover {
 	cursor: pointer;
