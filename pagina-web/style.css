@@ -344,7 +344,7 @@ form {
   }
   
   /* Barra de busqueda */
-.barra-busqueda {
+/*barra-busqueda {
 	display: flex;
 	align-items: center;
 	padding-top: 15px;
@@ -358,18 +358,137 @@ button[type="submit"] {
 	border-radius: 4px;
 	margin-left: 8px;
 	cursor: pointer;
-}
-
-.carrito-icon {
-	margin-left: 30px;
-	color: #007bff;
-	font-size: 20px;
-	width: 50px;
-	height: 50px;
-
+}*/
+/*Carrito icono*/
+.icono-carrito {
+	width: 30px;
+	height: 30px;
+	stroke: #fff;
 
 }
+.icono-carrito:hover{
+	cursor: pointer;
+}
+
+.contenedor-icono-carrito{
+	position: relative;
+	height: 40px;
+	width: 40px;
+	padding-top: 20px;
+	float: right;
+}
+
+.contar-productos{
+	position: absolute;
+	top: 55%;
+	right: 0;
+	background-color:#fff;
+	color: #000;
+	width:15px;
+	height:15px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+#contador-productos {
+	font-size: 15px;
+}
+
+.contenedor-carrito {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	background-color: #fff;
+	width: 350px;
+	margin-top: 10px;
+	z-index: 1;
+}
+
+.producto-en-carrito {
+	display: flex;
+	padding: 15px;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	align-items: center;
+}
+
+.info-prod-en-carrito {
+	display: flex;
+	justify-content: space-between;
+	flex: 0.8;
+
+}
+
+.nombre-prod-carrito {
+	font-size: 15px;
+	color: black;
+}
+
+.precio-prod-carrito {
+    font-weight:700;
+	font-size: 15px;
+	color: black;
+	margin-left: 10px;
+}
+
+.cantidad-prod-carrito {
+	font-weight: 400;
+	font-size: 15px;
+	color:black;
+}
+
+.total-carrito {
+	display: flex;
+	justify-content: center;
+	padding: 5px 0;
+	gap: 5px;
+	align-items:center;
+	color: black;
+}
+
+.total-carrito h4 {
+	font-size: 15px;
+	font-weight: 700;
+	color: black;
+}
+
+.total-pagar {
+	font-size: 15px;
+	font-weight:800;
+	color: black;
+}
+
+.cerrar-icono{
+	width: 20px;
+	height: 20px;
+}
+.cerrar-icono{
+	stroke: black;
+	cursor: pointer;
+}
+
+.esconder-carrito{
+	display: none;
+}
+
+.carrito-vacio{
+	padding: 15px;
+	text-align: center;
+	color: black;
+}
+/*.fa-solid fa-xmark:hover {
+	cursor: pointer;
+}
+
+.fa-solid fa-xmark {
+	width: 15px;
+	height: 15px;
+}
+
 
 .fa-solid fa-cart-shopping fa-xl {
 	font-size: inherit;
-}
+}*/
+
