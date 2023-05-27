@@ -26,71 +26,119 @@
 			</ul>
 
 			<div class="contenedor-icono-carrito">
-				<div class="carrito-icono">
-					<a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+				<div class="contenedor-icono-carrito2">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						 fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						 stroke="currentColor" class="icono-carrito">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383
+						  1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3
+						  2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5
+						  14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75
+						  0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+					</svg>
+
+
+					<div class="contar-productos">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+
+				<div class="contenedor-carrito esconder-carrito">
+					<div class="row-producto">
+						<div class="producto-en-carrito">
+							<div class="info-prod-en-carrito">
+								<span class="cantidad-prod-carrito">1</span>
+								<span class="nombre-prod-carrito">producto</span>
+								<span class="precio-prod-carrito">$0</span>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg"
+								 fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								 stroke="currentColor" class="cerrar-icono">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M6 18L18 6M6 6l12 12" />
+							</svg>
+
+
+						</div>
+					</div>
+
+					<div class="total-carrito">
+						<h4>Total a pagar</h4>
+						<span class="total-pagar">$100</span>
+					</div>
+					<div>
+						<button class="boton-ir-carrito" onclick="IrACarrito()">Ir al carrito</button>
+					</div>
+
 				</div>
 			</div>
 		</nav>
 	</header>
        <h1 class="encabezado">Celulares</h1>
     <main>
-		<section class="product">
-			<img src="imagenes/celular s23.jpg" alt="Producto 1">
-			<h2> Samsung Galaxy S23 Plus</h2>
-			<p>	<li>Procesador: Qualcomm Snapdragon 8 Gen 2. Adreno 740.</li>
-			<li>Memoria RAM: 12 GB de RAM.</li>
-			<li>Almacenamiento: 512 GB de memoria interna.</li>
-			<li>Batería: 4.700 mAh. Carga rápida 45W. Carga inalámbrica 15W</li>
-			<li>Sistema operativo: Android 13. OneUI 5.1.</li>
-			<p><span class="precio-ahora">$450000</span></p>
-			<button>Agregar al carrito</button>
-		</section>
+		<section class="productos">
+			<div class="product">
+				<img src="imagenes/celular s23.jpg" alt="Producto 1">
+				<h2> Samsung Galaxy S23 Plus</h2>
+				<p>
+					<li>Procesador: Qualcomm Snapdragon 8 Gen 2. Adreno 740.</li>
+					<li>Memoria RAM: 12 GB de RAM.</li>
+					<li>Almacenamiento: 512 GB de memoria interna.</li>
+					<li>Batería: 4.700 mAh. Carga rápida 45W. Carga inalámbrica 15W</li>
+					<li>Sistema operativo: Android 13. OneUI 5.1.</li>
+				<p><span class="precio-ahora">$450000</span></p>
+				<button class="agregar-carrito">Agregar al carrito</button>
+			</div>
 
-		<section class="product">
-			<img src="imagenes/celular a53.jpg" alt="producto 2">
-			<h2>Samsung Galaxy A53</h2>
-			<p>
-				<li>Procesador Exynos 1280 Octa-Core de 2.4GHz.</li>
-				<li>6GB de RAM.</li>
-				<li>Memoria interna de 128GB.</li>
-				<li>Resistente al agua.</li>
-				<li>Batería de 5000mAh.</li>
-				<li>Con reconocimiento facial y sensor de huella dactilar.</li>
-			</p>
+			<div class="product">
+				<img src="imagenes/celular a53.jpg" alt="producto 2">
+				<h2>Samsung Galaxy A53</h2>
+				<p>
+					<li>Procesador Exynos 1280 Octa-Core de 2.4GHz.</li>
+					<li>6GB de RAM.</li>
+					<li>Memoria interna de 128GB.</li>
+					<li>Resistente al agua.</li>
+					<li>Batería de 5000mAh.</li>
+					<li>Con reconocimiento facial y sensor de huella dactilar.</li>
+				</p>
 
-			<p><span class="precio-ahora">$160000</span></p>
-			<button>Agregar al carrito</button>
-		</section>
+				<p><span class="precio-ahora">$160000</span></p>
+				<button class="agregar-carrito">Agregar al carrito</button>
+			</div>
 
-		<section class="product">
-			<img src="imagenes/celular zflip4.jpeg" alt="Producto 3">
-			<h2>Galaxy Z Flip 4</h2>
-			<p>
-				<li>Procesador: Qualcomm Snapdragon 8+ Gen 1.
-				</li>
-				<li>RAM: 8 GB.</li>
-				<li>Almacenamiento: 256 GB.</li>
-				<li>Batería: 3.700 mAh con carga rápida de 25W e inalámbrica.</li>
-				<li>Resistencia al agua: IPX8.</li>
-				<li>Sistema operativo: Android 12.</li>
-			</p>
+			<div class="product">
+				<img src="imagenes/celular zflip4.jpeg" alt="Producto 3">
+				<h2>Galaxy Z Flip 4</h2>
+				<p>
+					<li>
+						Procesador: Qualcomm Snapdragon 8+ Gen 1.
+					</li>
+					<li>RAM: 8 GB.</li>
+					<li>Almacenamiento: 256 GB.</li>
+					<li>Batería: 3.700 mAh con carga rápida de 25W e inalámbrica.</li>
+					<li>Resistencia al agua: IPX8.</li>
+					<li>Sistema operativo: Android 12.</li>
+				</p>
 
-			<p><span class="precio-ahora">$330000</span></p>
-			<button>Agregar al carrito</button>
-		</section>
-        <section class="product">
-			<img src="imagenes/celular a13.png" alt="Producto 4">
-			<h2>Samsung Galaxy A13 5G5</h2>
-			<p>
-				<li>Procesador Dimensity 700 de MediaTek</li>
-				<li>4GB de RAM</li>
-				<li>64GB de almacenamiento expandible.</li>
-				<li>Lector de huellas lateral.</li>
-				<li>Android 11</li>
-			</p>
-			</p>
-			<p><span class="precio-ahora">$82000</span></p>
-			<button>Agregar al carrito</button>
+				<p><span class="precio-ahora">$330000</span></p>
+				<button class="agregar-carrito">Agregar al carrito</button>
+			</div>
+			<div class="product">
+				<img src="imagenes/celular a13.png" alt="Producto 4">
+				<h2>Samsung Galaxy A13 5G5</h2>
+				<p>
+					<li>Procesador Dimensity 700 de MediaTek</li>
+					<li>4GB de RAM</li>
+					<li>64GB de almacenamiento expandible.</li>
+					<li>Lector de huellas lateral.</li>
+					<li>Android 11</li>
+				</p>
+
+				<p><span class="precio-ahora">$82000</span></p>
+				<button class="agregar-carrito">Agregar al carrito</button>
+			</div>
 		</section>
 	</main>
 	<footer>
@@ -104,6 +152,6 @@
 		</ul>
 		<p>Derechos Reservados © Tienda Virtual 2023</p>
 	</footer>
-    
+	<script src="Script1.js"></script>
 </body>
 </html>
