@@ -8,13 +8,19 @@ botonCarrito.addEventListener("click", () => {
    
 })
 
+//Boton ir al carrito
+
+function IrACarrito() {
+    window.location.href = "carrito.html";
+}
+
 
 const infoCarrito = document.querySelector(".producto-en-carrito")
 const rowProducto = document.querySelector(".row-producto")
 
 //Lista de todos los productos
 
-const listaProductos = document.querySelector(".productos-oferta")
+const listaProductos = document.querySelector(".productos")
 
 let todosLosProductos = []
 
@@ -27,7 +33,7 @@ listaProductos.addEventListener("click", (e) => {
 
         const infoProducto = {
             cantidad: 1,
-            nombre: producto.querySelector("span").textContent,
+            nombre: producto.querySelector("h2").textContent,
             precio: producto.querySelector("span").textContent,
         }
 

@@ -376,6 +376,7 @@ button[type="submit"] {
 	width: 40px;
 	padding-top: 20px;
 	float: right;
+	
 }
 
 .contar-productos{
@@ -404,6 +405,7 @@ button[type="submit"] {
 	width: 350px;
 	margin-top: 10px;
 	z-index: 1;
+	align-items: center;
 }
 
 .producto-en-carrito {
@@ -477,6 +479,23 @@ button[type="submit"] {
 	padding: 15px;
 	text-align: center;
 	color: black;
+}
+
+
+.boton-ir-carrito{
+	display:flex;
+	background-color: aquamarine;
+	width: 350px;
+	height: 40px;
+	font-size: 15px;
+	font-weight:300;
+	justify-content:center;
+	text-align:center;
+	line-height:40px;
+}
+
+.boton-ir-carrito:hover{
+	cursor: pointer;
 }
 /*.fa-solid fa-xmark:hover {
 	cursor: pointer;
