@@ -75,7 +75,7 @@ rowProducto.addEventListener('click', (e) => {
 
     
 })
-
+//Actualiza la vista del carrito con los productos seleccionados
 const showHTML = () => {
 
     localStorage.setItem('carritoProductos', JSON.stringify(todosLosProductos));
@@ -119,7 +119,7 @@ const showHTML = () => {
     valorTotal.innerText = `$${totalPrecio}`;
     contarProductos.innerText = totalProductos;
 }
-
+//Evento DOM localStorage
 window.addEventListener('DOMContentLoaded', () => {
     const carritoProductos = localStorage.getItem('carritoProductos');
 
