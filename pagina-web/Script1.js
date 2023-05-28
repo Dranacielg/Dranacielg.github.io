@@ -77,13 +77,17 @@ rowProducto.addEventListener('click', (e) => {
 })
 
 const showHTML = () => {
+    
+    // Guardar los productos en localStorage
+  localStorage.setItem('carritoProductos', JSON.stringify(todosLosProductos));
+
     //Mensaje carrito vacio
     if (!todosLosProductos.length) {
         contenedorCarrito.innerHTML = `
           <p class="carrito-vacio"> El carrito esta vacio!</p>
         `
     }
-
+    
     rowProducto.innerHTML = '';
 
     let totalPrecio = 0;
@@ -117,3 +121,13 @@ const showHTML = () => {
     valorTotal.innerText = `$${totalPrecio}`;
     contarProductos.innerText = totalProductos;
 }
+// Cargar los productos del carrito desde localStorage
+window.addEventListener('DOMContentLoaded', () => {
+    const carritoProductos = localStorage.getItem('carritoProductos');
+  
+    if (carritoProductos) {
+      todosLosProductos = JSON.parse(carritoProductos);
+      showHTML();
+    }
+  });
+  
