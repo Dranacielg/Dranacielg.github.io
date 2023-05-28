@@ -8,6 +8,9 @@ body {
 	min-height: 100vh;
 	
 }
+a{
+	color:white;
+}
 /*Navegador Superior*/
 header {
 	color: #fff;
@@ -52,8 +55,9 @@ nav a {
 }
 
 .product img {
-    width: 50%;
-    height: 50%;
+    width: 400px;
+    height: 400px;
+	object-fit:contain;
   }
 
 .product h2 {
