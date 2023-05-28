@@ -26,25 +26,22 @@
 			</ul>
 			<div class="contenedor-icono-carrito">
 				<div class="carrito-icono">
-				<a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+					<a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
 				</div>
 			</div>
-				
+
 		</nav>
 	</header>
 	<main>
-		<div id="carrito">
-			<!-- Contenedor principal -->
-			<h2>Carrito</h2>
-			<ul id="items"></ul>
-		
-			<span id="total-cost"></span>
-			<button type="submit" class="btn">Comprar ahora</button>
-			<input type="hidden" name="item_name" value="" />
-			<input type="hidden" name="item_price" value="" />
-			<input type="hidden" name="item_quantity" value="" />
+		<div id="productos-en-carrito">
+			<!-- Lista de productos desde localStorage -->
 		</div>
-          
+
+		<p id="total-pagar"></p>
+		<div id="contenedor-boton">
+			<button class="boton-comprar">Comprar ahora</button>
+		</div>
+		
 	</main>
 	<footer>
 		<h2><a href="contacto.html">Contactenos</a></h2>
@@ -57,6 +54,55 @@
 		</ul>
 		<p>Derechos Reservados © Tienda Virtual 2023</p>
 	</footer>
-	<script> src= "Script1.js" </script>
+	<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			const carritoProductos = localStorage.getItem("carritoProductos");
+
+			if (carritoProductos) {
+				const productos = JSON.parse(carritoProductos);
+				const listaProductos = document.getElementById("productos-en-carrito");
+
+				productos.forEach((producto) => {
+					const listItem = document.createElement("li");
+                    listItem.classList.add("producto-lista");
+					listItem.innerHTML = `
+
+				<span>(${producto.cantidad})</span>
+				<span>${producto.nombre}</span>
+				<span>      ${producto.precio}</span>
+				`;
+
+					listaProductos.appendChild(listItem);
+				});
+
+				let totalPagar = 0;
+				productos.forEach((producto) => {
+					totalPagar += producto.cantidad * parseFloat(producto.precio.slice(1));
+				});
+
+				const totalPagarElement = document.getElementById("total-pagar");
+                totalPagarElement.classList.add('total-carrito');
+				totalPagarElement.textContent = `Total a pagar: $${totalPagar.toFixed(2)}`;
+
+			}
+
+            const btnComprar = document.querySelector('.boton-comprar');
+
+            // Agregar evento de clic al botón
+            btnComprar.addEventListener('click', () => {
+                // Vaciar el carrito (eliminar los datos del localStorage)
+                localStorage.removeItem('carritoProductos');
+
+                // Mostrar el mensaje de compra exitosa
+                alert('¡Compra exitosa!');
+
+                // Redireccionar a la página de inicio (u otra página deseada)
+                window.location.href = 'Index.html';
+            })
+            
+		});
+	</script>
+
+	<script src="Script1.js"></script>
 </body>
 </html>

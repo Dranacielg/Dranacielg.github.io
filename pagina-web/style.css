@@ -497,6 +497,34 @@ button[type="submit"] {
 .boton-ir-carrito:hover{
 	cursor: pointer;
 }
+
+.producto-lista {
+	
+	padding-top: 15px;
+	list-style: none;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width:100%;
+
+}
+
+.total-carrito{
+	font-weight:300;
+}
+.boton-comprar{
+	display:flex;
+	justify-content:center;
+	padding:5px;
+}
+#contenedor-boton{
+	display:flex;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+}
 /*.fa-solid fa-xmark:hover {
 	cursor: pointer;
 }
