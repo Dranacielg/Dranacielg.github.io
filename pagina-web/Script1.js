@@ -80,13 +80,6 @@ const showHTML = () => {
     
     // Guardar los productos en localStorage
   localStorage.setItem('carritoProductos', JSON.stringify(todosLosProductos));
-
-    //Mensaje carrito vacio
-    if (!todosLosProductos.length) {
-        contenedorCarrito.innerHTML = `
-          <p class="carrito-vacio"> El carrito esta vacio!</p>
-        `
-    }
     
     rowProducto.innerHTML = '';
 

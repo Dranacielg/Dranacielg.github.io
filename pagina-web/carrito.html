@@ -36,13 +36,14 @@
 		<div id="carrito">
 			<!-- Contenedor principal -->
 			<h2>Carrito</h2>
-			<ul id="items"></ul>
+			<ul id="lista-productos"></ul>
 		
 			<span id="total-cost"></span>
 			<button type="submit" class="btn">Comprar ahora</button>
 			<input type="hidden" name="item_name" value="" />
 			<input type="hidden" name="item_price" value="" />
 			<input type="hidden" name="item_quantity" value="" />
+			<span id="total-pagar"></span>
 		</div>
           
 	</main>
@@ -57,6 +58,61 @@
 		</ul>
 		<p>Derechos Reservados © Tienda Virtual 2023</p>
 	</footer>
-	<script> src= "Script1.js" </script>
+	<script>
+		// Obtener los datos del carrito almacenados en el localStorage
+		const carritoProductos = localStorage.getItem('carritoProductos');
+	  
+		// Verificar si existen datos en el carrito
+		if (carritoProductos) {
+		  // Convertir los datos en formato JSON a un objeto JavaScript
+		  const productos = JSON.parse(carritoProductos);
+	  
+		  // Seleccionar el contenedor donde se mostrarán los productos
+		  const listaProductos = document.getElementById('lista-productos');
+	  
+		  // Recorrer los productos y crear los elementos para mostrarlos en la página
+		  productos.forEach(producto => {
+			// Crear un elemento de lista <li>
+			const listItem = document.createElement('li');
+	  
+			// Crear el contenido HTML del elemento de lista con los datos del producto
+			listItem.innerHTML = `
+			  <span>${producto.nombre}</span>
+			  <span>${producto.cantidad}</span>
+			  <span>${producto.precio}</span>
+			`;
+	  
+			// Agregar el elemento de lista al contenedor
+			listaProductos.appendChild(listItem);
+		  });
+		   // Calcular el valor total
+		   let totalPagar = 0;
+		  productos.forEach(producto => {
+			totalPagar += producto.cantidad * parseFloat(producto.precio.slice(1));
+		  });
+	  
+		  // Seleccionar el elemento donde se mostrará el total a pagar
+		  const totalPagarElement = document.getElementById('total-pagar');
+	  
+		  // Actualizar el contenido del elemento con el valor total
+		  totalPagarElement.textContent = `Total a pagar: $${totalPagar.toFixed(2)}`;
+		}
+		// Obtener referencia al botón "Comprar ahora"
+		const btnComprar = document.querySelector('.btn');
+
+		// Agregar evento de clic al botón
+		btnComprar.addEventListener('click', () => {
+		// Vaciar el carrito (eliminar los datos del localStorage)
+		localStorage.removeItem('carritoProductos');
+
+		// Mostrar el mensaje de compra exitosa
+		alert('¡Compra exitosa! Gracias por su compra.');
+
+		// Redireccionar a la página de inicio (u otra página deseada)
+		window.location.href = 'Index.html';
+		});
+	  </script>
+	  
+	  
 </body>
 </html>
