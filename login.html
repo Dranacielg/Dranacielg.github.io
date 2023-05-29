@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="icono/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icono/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icono/favicon-16x16.png">
+    <link rel="manifest" href="icono/site.webmanifest">
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Tienda Virtual</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="notebook.html">Notebook</a></li>
+                <li><a href="celulares.html">Celulares</a></li>
+                <li><a href="audios.html">Audios</a></li>
+                <li><a href="videojuegos.html">VideoJuegos</a></li>
+                <li class="sesion"><a href="login.html">Ingresar</a></li>
+            </ul>
+
+
+            <div class="contenedor-icono-carrito">
+                <div class="contenedor-icono-carrito2">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="icono-carrito">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383
+						  1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3
+						  2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5
+						  14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75
+						  0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+
+
+                    <div class="contar-productos">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+
+                <div class="contenedor-carrito esconder-carrito">
+                    <div class="row-producto">
+                        <div class="producto-en-carrito">
+                            <div class="info-prod-en-carrito">
+                                <span class="cantidad-prod-carrito">1</span>
+                                <span class="nombre-prod-carrito">producto </span>
+                                <span class="precio-prod-carrito">$0</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="cerrar-icono">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+
+                    <div class="total-carrito">
+                        <h4>Total a pagar</h4>
+                        <span class="total-pagar">$100</span>
+                    </div>
+                    <div>
+                        <button class="boton-ir-carrito" onclick="IrACarrito()">Ir al carrito</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <form action="" method="post" id="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="passw">Contraseña:</label>
+        <input type="password" id="passw" required><br>
+
+        <button type="submit">Iniciar sesión</button>
+        <p class="warnings" id="warnings"></p>
+    </form>
+
+
+    <h3>No tienes cuenta?<a href="registro.html">Registrate</a></h3>
+    <footer>
+        <h2><a href="contacto.html">Contactenos</a></h2>
+        <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="notebook.html">Notebook</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="audios.html">Audios</a></li>
+            <li><a href="videojuegos.html">VideoJuegos</a></li>
+        </ul>
+        <p>Derechos Reservados © Tienda Virtual 2023</p>
+    </footer>
+    <script src="registro.js"></script>
+    <script src="Script1.js"></script>
+</body>
+</html>
+
